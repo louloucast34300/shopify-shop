@@ -24,9 +24,9 @@ import Link from 'next/link'
              
        <Link key={i} href={`/products/${product.node.handle}`} className="group">
                 <div className="aspect-h-3 aspect-w-4 w-full overflow-hidden rounded-lg bg-gray-200 ">
-                  <Image
+                  <img
                     src={imageProduct}
-                    alt="#"
+                   
                     className="h-full w-full object-cover object-center group-hover:opacity-75"
                   />
                 </div>

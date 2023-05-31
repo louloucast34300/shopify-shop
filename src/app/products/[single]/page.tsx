@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 import { singleProductData, productData } from "@/api/controller/products.controller"
 import { SingleProductQuery } from "@/api/query/singleProduct.query"
 import { formatPrice } from "@/app/utils/formatPrice"
@@ -34,18 +32,18 @@ export default async function Single({params}:any){
     </nav>
     <div className="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
       <div className="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
-        <Image src={thumbnail} alt="Two each of gray, white, and black shirts laying flat." className="h-full w-full object-cover object-center"/>
+        <img src={thumbnail} alt="Two each of gray, white, and black shirts laying flat." className="h-full w-full object-cover object-center"/>
       </div>
       <div className="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
         <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
-          <Image src="https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg" alt="Model wearing plain black basic tee." className="h-full w-full object-cover object-center"/>
+          <img src="https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg" alt="Model wearing plain black basic tee." className="h-full w-full object-cover object-center"/>
         </div>
         <div className="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
-          <Image src="https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg" alt="Model wearing plain gray basic tee." className="h-full w-full object-cover object-center"/>
+          <img src="https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg" alt="Model wearing plain gray basic tee." className="h-full w-full object-cover object-center"/>
         </div>
       </div>
       <div className="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
-        <Image src={thumbnail} alt="Model wearing plain white basic tee." className="h-full w-full object-cover object-center"/>
+        <img src={thumbnail} alt="Model wearing plain white basic tee." className="h-full w-full object-cover object-center"/>
       </div>
     </div>
     <div className="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16">
