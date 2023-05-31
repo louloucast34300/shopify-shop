@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 import { productsQuery } from '../../api/query/products.query'
 import type { Product } from '../../api/interface/products.interface' 
 import { productData } from '@/api/controller/products.controller'
@@ -24,9 +24,9 @@ import Link from 'next/link'
              
        <Link key={i} href={`/products/${product.node.handle}`} className="group">
                 <div className="aspect-h-3 aspect-w-4 w-full overflow-hidden rounded-lg bg-gray-200 ">
-                  <img
+                  <Image
                     src={imageProduct}
-                   
+                    alt="#"
                     className="h-full w-full object-cover object-center group-hover:opacity-75"
                   />
                 </div>
