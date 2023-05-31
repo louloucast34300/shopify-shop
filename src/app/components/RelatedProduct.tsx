@@ -9,7 +9,7 @@ import Link from 'next/link'
 
     const {dataProduct} = await productData(productsQuery)
 
-    const relatedProducts = dataProduct ? dataProduct.filter(item => item.node.handle !== handle) : []
+    const relatedProducts = dataProduct ? dataProduct.filter((item:any) => item.node.handle !== handle) : []
 
     return (
       <div className="bg-white w-full">
