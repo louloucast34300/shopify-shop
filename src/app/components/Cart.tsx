@@ -12,8 +12,9 @@ const Panier = () => {
   console.log(cartData);
   useEffect(() => {
     const fetchData = async () => {
+      const cartId = localStorage.getItem('currentCart')
       const response = await getCart(getCartQuery, {
-        cartId: 'gid://shopify/Cart/Z2NwLWV1cm9wZS13ZXN0MTowMUgyM0FSQkJDNDJQSkYxR0dRQTlCQUFBNA',
+        cartId: cartId,
       });
 
       setCartData(response.data);
