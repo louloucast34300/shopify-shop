@@ -64,7 +64,7 @@ const Panier = () => {
                       <div className="px-2">
                         <h1 className="text-black">{title}</h1>
                         <div>prix/u : {formatPrice(price)}</div>
-                        <div>Quantité : {quantity}</div>
+                        <div>Quantité : {quantity} </div>
                       </div>
                       <div className="px-2">
                         <h1 className="text-black">{formatPrice(priceAndQuantity)}</h1>
@@ -74,10 +74,16 @@ const Panier = () => {
                 })}
             </div>
             <div className="cart-summary px-7 py-4 text-[20px]">
-              <div>Subtotal:{formatPrice(cartData.cart.cost.subtotalAmount.amount)}</div>
-              <div> Shipping estimate:{cartData.cart.cost.totalDutyAmount ? cartData.cart.cost.totalDutyAmount.toString() : formatPrice(0)}</div>
-              <div> Tax estimate:{cartData.cart.cost.totalTaxAmount ? cartData.cart.cost.totalTaxAmount.toString() : formatPrice(0)}</div>
-              <div>Total:{formatPrice(cartData.cart.cost.totalAmount.amount)}</div>
+              <div>Subtotal : {formatPrice(cartData.cart.cost.subtotalAmount.amount)}</div>
+              <div>
+                Shipping estimate :{' '}
+                {cartData.cart.cost.totalDutyAmount ? cartData.cart.cost.totalDutyAmount.amount.toString() : formatPrice(0)}
+              </div>
+              <div>
+                Tax estimate :{' '}
+                {cartData.cart.cost.totalTaxAmount ? cartData.cart.cost.totalTaxAmount.amount.toString() : formatPrice(0)}
+              </div>
+              <div>Total : {formatPrice(cartData.cart.cost.totalAmount.amount)}</div>
             </div>
           </div>
         </div>
