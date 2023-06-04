@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import { getCart } from '@/api/controller/products.controller';
 import { getCartQuery } from '@/api/query/getCart.query';
-import { data } from 'autoprefixer';
 import { formatPrice } from '../utils/formatPrice';
 import type {cartDataInterFace} from '../../api/interface/cartData'
 const Panier = () => {
@@ -29,7 +28,7 @@ const Panier = () => {
   }
 
   if (!cartData) {
-    return <p>Une erreur s'est produite lors de la récupération du panier.</p>;
+    return <p>Une erreur sest produite lors de la récupération du panier.</p>;
   }
 
   return (
