@@ -74,10 +74,10 @@ const Panier = () => {
                 })}
             </div>
             <div className="cart-summary px-7 py-4 text-[20px]">
-              <div>Subtotal : {formatPrice(cartData.cart.cost.subtotalAmount.amount)}</div>
-              <div> Shipping estimate : {cartData.cart.cost.totalDutyAmount ? cartData.cart.cost.totalDutyAmount.toString() : formatPrice(0)}</div>
-              <div> Tax estimate : {cartData.cart.cost.totalTaxAmount ? cartData.cart.cost.totalTaxAmount.toString() : formatPrice(0)}</div>
-              <div>Total : {formatPrice(cartData.cart.cost.totalAmount.amount)}</div>
+              <div>Subtotal:{formatPrice(cartData.cart.cost.subtotalAmount.amount)}</div>
+              <div> Shipping estimate:{cartData.cart.cost.totalDutyAmount ? cartData.cart.cost.totalDutyAmount.toString() : formatPrice(0)}</div>
+              <div> Tax estimate:{cartData.cart.cost.totalTaxAmount ? cartData.cart.cost.totalTaxAmount.toString() : formatPrice(0)}</div>
+              <div>Total:{formatPrice(cartData.cart.cost.totalAmount.amount)}</div>
             </div>
           </div>
         </div>
