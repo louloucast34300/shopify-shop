@@ -3,6 +3,7 @@ import { SingleProductQuery } from "@/api/query/singleProduct.query"
 import { formatPrice } from "@/app/utils/formatPrice"
 import  RelatedProduct  from '../../components/RelatedProduct'
 import CheckoutButton from "@/app/components/CheckoutButton"
+import AddToCartButton from "@/app/components/AddToCartButton"
 
 
 
@@ -182,6 +183,7 @@ export default async function Single({params}:any){
             </fieldset>
           </div>
             <CheckoutButton variantId={id}/>
+            <AddToCartButton productId={id}/>
         </form>
       </div>
 

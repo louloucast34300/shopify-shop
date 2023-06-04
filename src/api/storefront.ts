@@ -1,12 +1,12 @@
 export async function storefront(query:any, variables = {}){
 
     const response = await fetch(
-       "https://fcb829-2.myshopify.com/api/2023-04/graphql.json",
+       "https://c1c0ac.myshopify.com/api/2023-04/graphql.json",
         {
             method:"POST",
             headers:{
                 "Content-Type":"application/json",
-                "X-Shopify-Storefront-Access-Token": "dc56b8b4664ba27e8e209ca0a91c72f6"
+                "X-Shopify-Storefront-Access-Token": "a975612ecafb899532748903eb31cccc"
             },
             body: JSON.stringify({ query, variables }),
         }

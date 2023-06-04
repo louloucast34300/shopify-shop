@@ -16,6 +16,7 @@ import Link from 'next/link'
   
           <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
             {dataProduct.map((product:Product,i:number) => {
+              console.log(product.node.images.edges[0].node.url)
                   const imageProduct = product.node.images.edges[0].node.url
                   const titleProduct = product.node.title
                   const tagProduct = product.node.tags[0]
@@ -26,7 +27,6 @@ import Link from 'next/link'
                 <div className="aspect-h-3 aspect-w-4 w-full overflow-hidden rounded-lg bg-gray-200 ">
                   <img
                     src={imageProduct}
-                   
                     className="h-full w-full object-cover object-center group-hover:opacity-75"
                   />
                 </div>

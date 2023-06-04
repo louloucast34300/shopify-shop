@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import {Navbar} from './components/Navbar'
 import { Footer } from './components/Footer'
+import Panier from './components/Cart'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,11 +12,13 @@ export const metadata = {
 }
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
+
   return (
     <html lang="en">
       <body className={inter.className}>
-      <Navbar/>
-        {children}
+          <Navbar/>
+          {children}
+          <Panier/>
         <Footer/>
       </body>
     </html>
